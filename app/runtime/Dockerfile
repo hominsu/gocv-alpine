@@ -5,6 +5,5 @@ ARG VERSION
 
 FROM alpine:$VERSION
 LABEL author=$AUTHOR_NAME email=${AUTHOR_EMAIL} version=$VERSION
-# intstall git build-base opencv-dev
+# intstall git build-base opencv
 RUN apk add --no-cache opencv
-
